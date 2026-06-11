@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <title>DESAFIO 01 - JAVASCRIPT</title>
+    <meta name="description" content="Controle das aulas de JavaScript">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Murilo Gustavo, gustavodavb43@gmail.com, 11975061855">
+</head>
+
+<body>
+    <h1>Solicitando informações</h1>
+    <hr>
+    <script>
+        let numero = window.prompt("Digite o primeiro numero");
+        let numero2 = window.prompt("Digite o segundo numero");
+        let pergunta = window.prompt("Você deseja adição ou subtração?");
+        let resultado = 0;
+        if (pergunta === "adição") {
+            resultado = parseInt(numero) + parseInt(numero2);
+        }
+        if (pergunta === "subtração") {
+            resultado = parseInt(numero) - parseInt(numero2);
+        }
+        window.alert("O resultado é: " + resultado);
+    </script>
+</body>
+
+</html>
