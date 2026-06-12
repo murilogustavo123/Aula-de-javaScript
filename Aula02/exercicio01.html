@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <title>EXERCICIO 01 - Aula02</title>
+    <meta name="description" content="Controle das aulas de JavaScript">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Murilo Gustavo, gustavodavb43@gmail.com, 11975061855">
+</head>
+<body>
+    <h1>EXERCICIO 01 - AULA 02</h1>9
+    <hr>
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p>aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar e exercer</p>
+    </div>
+    <script>
+        const tags_P = document.getElementsByTagName('p')
+        console.log(tags_P);
+        let tag_p_1 = tags_P[0]
+        console.log(tag_p_1);
+        tag_p_1.style.backgroundColor = "purple";
+        tag_p_1.style.color = "white";
+        tag_p_1.style.textAlign = "center";
+        tag_p_1.style.fontSize = "25pt";
+
+        let tag_p_2 = tags_P[1]
+        console.log(tag_p_2);
+        tag_p_2.style.backgroundColor = "lightblue";
+        tag_p_2.style.color = "black";
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.fontSize = "25pt";
+
+        let tag_p_3 = tags_P[2]
+        console.log(tag_p_3);
+        tag_p_3.style.backgroundColor = "lightgreen";
+        tag_p_3.style.color = "black";
+        tag_p_3.style.textAlign = "center";
+        tag_p_3.style.fontSize = "25pt";
+
+        tag_p_3.innerText = "A TURMA DO DEV É ESPETACULAR DEMAIS!"
+
+        document.write('<h2>UAAAU, <mark>JAVASCRIPT È MUITO LEGAL! </mark></h2>')
+        
+    </script>
+</body>
+</html>
