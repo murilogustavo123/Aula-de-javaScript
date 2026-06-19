@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="...">
     <meta name="keywords" content="sites, web">
-    <meta name="author" content="Murilo gustavo de oiveira duarte">
+    <meta name="author" content="Misael Lucas fonseca dos santos">
     <link rel="icon" type="image/svg+xml" href="../img/foto_js.jpg">
-    <title>DESAFIO 03 - Aula02 JAVASCRIPT</title>
+    <title>DESAFIO 04 - Aula02 JAVASCRIPT</title>
     
 </head>
 
@@ -17,7 +17,7 @@
     <hr>
 
     <div>
-        <img src="porsche.jpg" alt="Carro" width="250px" title="Porsche"> <br>
+        <img src="porsche.jpg" alt="um carro" width="250px" title="porsche"> <br>
         <button onclick="Trocar_img()">Trocar imagem</button>
     </div>
 
@@ -25,13 +25,20 @@
     <script>
         function Trocar_img (){
             const tags_i = document.getElementsByTagName('img'); 
-            let tags_i_1 = tags_i[0]
 
             console.log(tags_i)
-         
-                tags_i_1.src="favicon.png"
-                tags_i_1.title = "Carro"         
+            let tags_i_1 = tags_i[0]
+            if(tags_i_1.title=="carro"){
+                tags_i_1.src="civic.jpg"
+                tags_i_1.title = "civic"
+            
+            }else{
+                   
+                tags_i_1.src="porsche.jpg"
+                tags_i_1.title = "carro"     
+            }
         }
+        
         
 
 
